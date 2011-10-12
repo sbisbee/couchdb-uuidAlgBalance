@@ -1,0 +1,5 @@
+  - Take in the results of /_uuids (from a file)
+  - Grab the last 4 characters of each id
+  - Converts that hex number to decimal
+  - Take the remainder of that decimal number divided by the number of nodes
+  - Output distribution
