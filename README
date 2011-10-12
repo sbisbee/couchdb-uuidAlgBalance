@@ -1,3 +1,21 @@
+Usage
+-----
+
+node ./main.js [number of consumers]
+
+Example: node ./main.js 3
+
+The General Idea
+----------------
+
+Let's say you have a bunch of consumers polling a changes feed. You want to
+divide the work between the consumers evenly, so you decide to base it on the
+documents' _id since they are just big hexidecimal numbers.
+
+
+Flow
+----
+
   - Take in the results of /_uuids (from a file)
   - Grab the last 4 characters of each id
   - Converts that hex number to decimal
